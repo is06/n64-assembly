@@ -6,6 +6,10 @@ A Visual Studio Code extension that provides a color theme and N64 MIPS Assembly
 
 N64 Assembly extension provides:
 
+### N64AweSoMe color theme
+
+<img src="https://raw.githubusercontent.com/is06/n64-assembly/master/images/theme.png">
+
 ### N64 MIPS Assembly language support
 
 You can write specific N64 MIPS Assembly instructions and have great support in syntax coloration!
