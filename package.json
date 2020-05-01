@@ -1,0 +1,43 @@
+{
+    "name": "n64-assembly",
+    "displayName": "N64 Assembly Support",
+    "description": "An extension to have N64 Assembly support on vscode!",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Themes"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "n64asm",
+                "aliases": [
+                    "N64 MIPS Assembly"
+                ],
+                "extensions": [
+                    ".asm",
+                    ".inc",
+                    ".n64asm"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "n64asm",
+                "scopeName": "source.n64asm",
+                "path": "./syntaxes/n64asm.tmLanguage.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "N64AweSoMe",
+                "uiTheme": "vs-dark",
+                "path": "./themes/N64AweSoMe-theme.json"
+            }
+        ]
+    }
+}

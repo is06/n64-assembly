@@ -1,0 +1,136 @@
+{
+    "$schema": "vscode://schemas/color-theme",
+    "type": "dark",
+    "colors": {
+        "activityBar.background": "#333355",
+        "activityBar.activeBackground": "#555577",
+        "activityBarBadge.background": "#c22b6a",
+        "editor.background": "#333355",
+        "editor.foreground": "#eeeeee",
+        "editor.lineHighlightBackground": "#513066",
+        "editor.selectionBackground": "#555577",
+        "sideBar.background": "#222244",
+        "sideBarSectionHeader.background": "#333355",
+        "statusBar.background": "#222244",
+        "menu.background": "#222244",
+        "titleBar.activeBackground": "#333355",
+        "badge.background": "#c22b6a",
+        "dropdown.background": "#222244",
+        "list.hoverBackground": "#333355",
+        "list.activeSelectionBackground": "#444477",
+        "list.inactiveSelectionBackground": "#333355",
+        "input.background": "#222244",
+        "input.border": "#666699",
+        "button.background": "#777799",
+        "notifications.background": "#222244"
+    },
+    "tokenColors": [
+        {
+            "name": "Comment",
+            "scope": [
+                "comment",
+                "string.comment",
+                "support.n64asm.comment"
+            ],
+            "settings": {
+                "foreground": "#999999",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Function name",
+            "scope": [
+                "entity.name.function",
+                "support.function",
+                "function",
+                "function.support.builtin",
+                "function.support.core",
+                "support.n64asm.label"
+            ],
+            "settings": {
+                "foreground": "#8bdf64"
+            }
+        },
+        {
+            "name": "Function call",
+            "scope": [
+                "entity.name.function-call",
+                "support.n64asm.macro"
+            ],
+            "settings": {
+                "foreground": "#fd9f24"
+            }
+        },
+        {
+            "name": "Constant",
+            "scope": [
+                "constant.language",
+                "constant.character",
+                "constant.other",
+                "variable.language",
+                "support.constant",
+                "support.n64asm.constant"
+            ],
+            "settings": {
+                "foreground": "#f05286"
+            }
+        },
+        {
+            "name": "Number",
+            "scope": [
+                "constant.numeric",
+                "support.n64asm.number"
+            ],
+            "settings": {
+                "foreground": "#f481ff"
+            }
+        },
+        {
+            "name": "String",
+            "scope": [
+                "string",
+                "string.template"
+            ],
+            "settings": {
+                "foreground": "#dfd65d"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": [
+                "keyword",
+                "keyword.operator",
+                "keyword.operator.logical",
+                "keyword.operator.constructor",
+                "entity.name.tag",
+                "support.dictionary.json",
+                "support.n64asm.instructions",
+                "storage.type",
+                "storage"
+            ],
+            "settings": {
+                "foreground": "#58c2ff",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Secondary Keyword",
+            "scope": [
+                "support.n64asm.instructions.bass"
+            ],
+            "settings": {
+                "foreground": "#22dabb",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Other",
+            "scope": [
+                "support.n64asm.definition.identifier"
+            ],
+            "settings": {
+                "foreground": "#eeeeee"
+            }
+        }
+    ]
+}

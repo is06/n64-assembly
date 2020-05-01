@@ -1,0 +1,125 @@
+{
+    "name": "N64 MIPS Assembler",
+    "scopeName": "source.n64asm",
+    "fileTypes": [
+        "*.asm",
+        "*.inc"
+    ],
+    "patterns": [
+        {
+            "name": "support.n64asm.instructions.bass",
+            "match": "\\b(arch|endian|output|fill|origin|base|include|insert|db|dh|dw|dd|float32|while)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.arithmetic",
+            "match": "\\b(mul|abs|div|divu|mulo|mulou|neg|negu|not|rem|remu|rol|ror|abs\\.d|abs\\.s|add|add\\.d|add\\.s|addi|addiu|addu|and|andi|ceil\\.w\\.d|ceil\\.w\\.s|div|div\\.d|div\\.s|divu|eret|floor\\.w\\.d|floor\\.w\\.s|mul|mul\\.d|mul\\.s|mult|multu|neg\\.d|neg\\.s|nop|nor|or|ori|round\\.w\\.d|round\\.w\\.s|sll|sllv|slt|slti|sltiu|sltu|sqrt\\.d|sqrt\\.s|sra|srav|srl|srlv|sub|sub\\.d|sub\\.s|subu|trunc\\.w\\.d|trunc\\.w\\.s|xor|xori)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.register",
+            "match": "\\b(li|la|ld|ulh|ulhu|ulw|sd|ush|usw|move|lb|lbu|lh|lhu|ll|lui|lw|lwc1|lwl|lwr|mfc0|mfc1|mfhi|mflo|mov\\.d|mov\\.s|movf|movf\\.d|movf\\.s|movn|movn\\.d|movn\\.s|movt|movt\\.d|movt\\.s|movz|movz\\.d|movz\\.s|msub|mtc0|mtc1|mthi|mtlo|sw|swc1|swl|swr|sb|sc|sdc1|sh)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.jumps",
+            "match": "\\b(b|beqz|bge|bgeu|bgt|bgtu|ble|bleu|blt|bltu|bnez|beq|bgez|bgezal|bgtz|blez|bltz|bltzal|bne|j|jal|jalr|jr)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.general",
+            "match": "\\b(seq|sge|sgeu|sgt|sgtu|sle|sleu|sne|mfc1\\.d|l\\.d|l\\.s|s\\.d|s\\.s|bc1f|bc1t|break|c\\.eq\\.d|c\\.eq\\.s|c\\.le\\.d|c\\.le\\.s|c\\.lt\\.d|c\\.lt\\.s|clo|clz|cvt\\.d\\.s|cvt\\.d\\.w|cvt\\.s\\.d|cvt\\.s\\.w|cvt\\.w\\.d|cvt\\.w\\.s|madd|maddu|syscall|teq|teqi|tge|tgei|tgeiu|tgeu|tlt|tlti|tltiu|tltu)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rdp",
+            "match": "\\b(Set_Color_Image|Set_Texture_Image|Set_Z_Image|Set_Tile|Load_Tile|Load_Block|Set_Tile_Size|Load_Tlut|Edge_Coefficients|Shade_Coefficients|Texture_Coefficients|Z_Buffer_Coefficients|Fill_Rectangle|Fill_Triangle|Texture_Rectangle|Texture_Triangle|Texture_Rectangle_Flip|Set_Combine_Mode|Set_Other_Modes|Set_Env_Color|Set_Prim_Color|Set_Blend_Color|Set_Fog_Color|Set_Fill_Color|Set_Prim_Depth|Set_Scissor|Set_Convert|Set_Key_R|Set_Key_GB|Sync_Full|Sync_Load|Sync_Pipe|Sync_Tile|No_Op)\\b"
+        },
+        {
+            "name": "support.n64asm.label",
+            "captures": {
+                "1": {
+                    "name": "entity.name.function.label.n64asm"
+                }
+            },
+            "match": "\\b([A-Za-z0-9_]+):"
+        },
+        {
+            "name": "support.n64asm.definition",
+            "match": "\\b(constant)(\\s)([A-Za-z0-9_]+)\\(",
+            "captures": {
+                "1": {
+                    "name": "support.n64asm.instructions.bass"
+                },
+                "3": {
+                    "name": "support.n64asm.constant"
+                }
+            }
+        },
+        {
+            "name": "support.n64asm.definition",
+            "match": "\\b(macro)?(\\s)?([A-Za-z0-9_]+)\\(",
+            "captures": {
+                "1": {
+                    "name": "support.n64asm.instructions.bass"
+                },
+                "3": {
+                    "name": "support.n64asm.macro"
+                }
+            }
+        },
+        {
+            "name": "support.n64asm.number.hexadecimal",
+            "match": "\\b(0(x|X))([a-fA-F0-9]+)\\b"
+        },
+        {
+            "name": "support.n64asm.number.hexadecimal",
+            "match": "(\\$)\\b([a-fA-F0-9]+)\\b"
+        },
+        {
+            "name": "support.n64asm.number.decimal.integer",
+            "match": "(\\-)?\\b([0-9]+)\\b"
+        },
+        {
+            "name": "support.n64asm.number.decimal.float",
+            "match": "(\\-)?\\b([0-9\\.]+)\\b"
+        },
+        {
+            "name": "string",
+            "begin": "\"",
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.begin.mips"
+                }
+            },
+            "end": "\"",
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.end.mips"
+                }
+            },
+            "patterns": [
+                {
+                    "match": "\\\\[rnt\\\\\"]"
+                }
+            ]
+        },
+        {
+            "name": "comment",
+            "begin": "(^[ \\t]+)?(?=//)",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.whitespace.comment.leading.mips"
+                }
+            },
+            "end": "(?!\\G)",
+            "patterns": [
+                {
+                    "name": "comment.line.number-sign.mips",
+                    "begin": "//",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.n64asm"
+                        }
+                    },
+                    "end": "\n"
+                }
+            ]
+        }
+    ]
+}
