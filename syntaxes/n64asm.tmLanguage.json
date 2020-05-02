@@ -27,6 +27,34 @@
             "match": "\\b(seq|sge|sgeu|sgt|sgtu|sle|sleu|sne|mfc1\\.d|l\\.d|l\\.s|s\\.d|s\\.s|bc1f|bc1t|break|c\\.eq\\.d|c\\.eq\\.s|c\\.le\\.d|c\\.le\\.s|c\\.lt\\.d|c\\.lt\\.s|clo|clz|cvt\\.d\\.s|cvt\\.d\\.w|cvt\\.s\\.d|cvt\\.s\\.w|cvt\\.w\\.d|cvt\\.w\\.s|madd|maddu|syscall|teq|teqi|tge|tgei|tgeiu|tgeu|tlt|tlti|tltiu|tltu)\\b"
         },
         {
+            "name": "support.n64asm.instructions.rsp.vector.operation",
+            "match": "\\b(vnop|vrndp|vrndn|vabs|vrcp|vrcpl|vrcph|vmov|vrsq|vrsql|vrsqh|vextt|vextq|vinst|vinsq|vinsn|v056|v057|v073)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rsp.vector.logical",
+            "match": "\\b(vlt|veq|vne|vge|vcl|vch|vcr|vmrg|vand|vnand|vor|vnor|vxor)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rsp.vector.operation.multiply",
+            "match": "\\b(vmulf|vmulu|vmulq|vmuld|vmudm|vmudn|vmudh|vmacf|vmacu|vmacq|vmadl|vmadm|vmadn|vmadh)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rsp.vector.operation.add",
+            "match": "\\b(vadd|vaddc|vaddb|vaccb|vacc)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rsp.vector.operation.sub",
+            "match": "\\b(vsub|vsut|vsubc|vsubb|vsucb|vsuc)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rsp.vector.load",
+            "match": "\\b(lbv|lsv|llv|ldv|lqv|lrv|lpv|luv|lhv|lfv|lwv|ltv)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rsp.vector.store",
+            "match": "\\b(sbv|ssv|slv|sdv|sqv|srv|spv|suv|shv|sfv|swv|stv)\\b"
+        },
+        {
             "name": "support.n64asm.instructions.rdp",
             "match": "\\b(Set_Color_Image|Set_Texture_Image|Set_Z_Image|Set_Tile|Load_Tile|Load_Block|Set_Tile_Size|Load_Tlut|Edge_Coefficients|Shade_Coefficients|Texture_Coefficients|Z_Buffer_Coefficients|Fill_Rectangle|Fill_Triangle|Texture_Rectangle|Texture_Triangle|Texture_Rectangle_Flip|Set_Combine_Mode|Set_Other_Modes|Set_Env_Color|Set_Prim_Color|Set_Blend_Color|Set_Fog_Color|Set_Fill_Color|Set_Prim_Depth|Set_Scissor|Set_Convert|Set_Key_R|Set_Key_GB|Sync_Full|Sync_Load|Sync_Pipe|Sync_Tile|No_Op)\\b"
         },
