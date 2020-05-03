@@ -16,6 +16,10 @@ You can write specific N64 MIPS Assembly instructions and have great support in 
 
 ## Release Notes
 
+### 1.1.0
+
+Added the RSP vector instructions into the language grammar.
+
 ### 1.0.0
 
 This is the very first version of this N64 Assembly Support, I hope it will help you make awesome N64 games!
