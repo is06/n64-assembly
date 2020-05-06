@@ -56,7 +56,7 @@
         },
         {
             "name": "support.n64asm.instructions.rdp",
-            "match": "\\b(Set_Color_Image|Set_Texture_Image|Set_Z_Image|Set_Tile|Load_Tile|Load_Block|Set_Tile_Size|Load_Tlut|Edge_Coefficients|Shade_Coefficients|Texture_Coefficients|Z_Buffer_Coefficients|Fill_Rectangle|Fill_Triangle|Texture_Rectangle|Texture_Triangle|Texture_Rectangle_Flip|Set_Combine_Mode|Set_Other_Modes|Set_Env_Color|Set_Prim_Color|Set_Blend_Color|Set_Fog_Color|Set_Fill_Color|Set_Prim_Depth|Set_Scissor|Set_Convert|Set_Key_R|Set_Key_GB|Sync_Full|Sync_Load|Sync_Pipe|Sync_Tile|No_Op)\\b"
+            "match": "\\b(Set_Color_Image|Set_Texture_Image|Set_Z_Image|Set_Tile|Load_Tile|Load_Block|Set_Tile_Size|Load_Tlut|Edge_Coefficients|Shade_Coefficients|Texture_Coefficients|Z_Buffer_Coefficients|Fill_Triangle|Fill_ZBuffer_Triangle|Shade_Triangle|Texture_Triangle|Texture_ZBuffer_Triangle|Shade_ZBuffer_Triangle|Shade_Texture_Triangle|Shade_Texture_Z_Buffer_Triangle|Fill_Rectangle|Texture_Rectangle|Texture_Triangle|Texture_Rectangle_Flip|Set_Combine_Mode|Set_Other_Modes|Set_Env_Color|Set_Prim_Color|Set_Blend_Color|Set_Fog_Color|Set_Fill_Color|Set_Prim_Depth|Set_Scissor|Set_Convert|Set_Key_R|Set_Key_GB|Sync_Full|Sync_Load|Sync_Pipe|Sync_Tile|No_Op)\\b"
         },
         {
             "name": "support.n64asm.label",
