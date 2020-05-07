@@ -16,6 +16,10 @@ You can write specific N64 MIPS Assembly instructions and have great support in 
 
 ## Release Notes
 
+### 1.1.1
+
+Added some missing RDP instructions for triangle drawing.
+
 ### 1.1.0
 
 Added the RSP vector instructions into the language grammar.
