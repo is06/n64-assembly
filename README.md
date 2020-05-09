@@ -16,6 +16,11 @@ You can write specific N64 MIPS Assembly instructions and have great support in 
 
 ## Release Notes
 
+### 1.1.2
+
+- Fixed macro calls detection (address offsets are not caught anymore).
+- Added `cache` and `subi` instructions.
+
 ### 1.1.1
 
 Added some missing RDP instructions for triangle drawing.
