@@ -12,7 +12,7 @@
         },
         {
             "name": "support.n64asm.instructions.arithmetic",
-            "match": "\\b(mul|abs|div|divu|mulo|mulou|neg|negu|not|rem|remu|rol|ror|abs\\.d|abs\\.s|add|add\\.d|add\\.s|addi|addiu|addu|and|andi|ceil\\.w\\.d|ceil\\.w\\.s|div|div\\.d|div\\.s|divu|eret|floor\\.w\\.d|floor\\.w\\.s|mul|mul\\.d|mul\\.s|mult|multu|neg\\.d|neg\\.s|nop|nor|or|ori|round\\.w\\.d|round\\.w\\.s|sll|sllv|slt|slti|sltiu|sltu|sqrt\\.d|sqrt\\.s|sra|srav|srl|srlv|sub|sub\\.d|sub\\.s|subu|trunc\\.w\\.d|trunc\\.w\\.s|xor|xori)\\b"
+            "match": "\\b(mul|abs|div|divu|mulo|mulou|neg|negu|not|rem|remu|rol|ror|abs\\.d|abs\\.s|add|add\\.d|add\\.s|addi|addiu|addu|and|andi|ceil\\.w\\.d|ceil\\.w\\.s|div|div\\.d|div\\.s|divu|eret|floor\\.w\\.d|floor\\.w\\.s|mul|mul\\.d|mul\\.s|mult|multu|neg\\.d|neg\\.s|nop|nor|or|ori|round\\.w\\.d|round\\.w\\.s|sll|sllv|slt|slti|sltiu|sltu|sqrt\\.d|sqrt\\.s|sra|srav|srl|srlv|sub|sub\\.d|sub\\.s|subi|subu|trunc\\.w\\.d|trunc\\.w\\.s|xor|xori)\\b"
         },
         {
             "name": "support.n64asm.instructions.register",
@@ -24,7 +24,7 @@
         },
         {
             "name": "support.n64asm.instructions.general",
-            "match": "\\b(seq|sge|sgeu|sgt|sgtu|sle|sleu|sne|mfc1\\.d|l\\.d|l\\.s|s\\.d|s\\.s|bc1f|bc1t|break|c\\.eq\\.d|c\\.eq\\.s|c\\.le\\.d|c\\.le\\.s|c\\.lt\\.d|c\\.lt\\.s|clo|clz|cvt\\.d\\.s|cvt\\.d\\.w|cvt\\.s\\.d|cvt\\.s\\.w|cvt\\.w\\.d|cvt\\.w\\.s|madd|maddu|syscall|teq|teqi|tge|tgei|tgeiu|tgeu|tlt|tlti|tltiu|tltu)\\b"
+            "match": "\\b(seq|sge|sgeu|sgt|sgtu|sle|sleu|sne|mfc1\\.d|l\\.d|l\\.s|s\\.d|s\\.s|bc1f|bc1t|break|cache|c\\.eq\\.d|c\\.eq\\.s|c\\.le\\.d|c\\.le\\.s|c\\.lt\\.d|c\\.lt\\.s|clo|clz|cvt\\.d\\.s|cvt\\.d\\.w|cvt\\.s\\.d|cvt\\.s\\.w|cvt\\.w\\.d|cvt\\.w\\.s|madd|maddu|syscall|teq|teqi|tge|tgei|tgeiu|tgeu|tlt|tlti|tltiu|tltu)\\b"
         },
         {
             "name": "support.n64asm.instructions.rsp.vector.operation",
@@ -68,7 +68,7 @@
             "match": "\\b([A-Za-z0-9_]+):"
         },
         {
-            "name": "support.n64asm.definition",
+            "name": "support.n64asm.definition.constant",
             "match": "\\b(constant)(\\s)([A-Za-z0-9_]+)\\(",
             "captures": {
                 "1": {
@@ -80,13 +80,22 @@
             }
         },
         {
-            "name": "support.n64asm.definition",
-            "match": "\\b(macro)?(\\s)?([A-Za-z0-9_]+)\\(",
+            "name": "support.n64asm.definition.macro",
+            "match": "\\b(macro)(\\s)([A-Za-z0-9_]+)\\(",
             "captures": {
                 "1": {
                     "name": "support.n64asm.instructions.bass"
                 },
                 "3": {
+                    "name": "support.n64asm.macro"
+                }
+            }
+        },
+        {
+            "name": "support.n64asm.use.macro",
+            "match": "^(([^,])?(\\s)?([A-Za-z0-9_]+))\\(",
+            "captures": {
+                "1": {
                     "name": "support.n64asm.macro"
                 }
             }
