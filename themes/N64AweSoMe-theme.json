@@ -22,7 +22,9 @@
         "input.background": "#222244",
         "input.border": "#666699",
         "button.background": "#777799",
-        "notifications.background": "#222244"
+        "notifications.background": "#222244",
+        "tab.inactiveBackground": "#222244",
+        "editorGroupHeader.tabsBackground": "#222244"
     },
     "tokenColors": [
         {
