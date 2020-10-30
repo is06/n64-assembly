@@ -2,7 +2,7 @@
     "name": "n64-assembly",
     "displayName": "N64 Assembly Support",
     "description": "An extension to have N64 Assembly support on vscode!",
-    "version": "1.1.4",
+    "version": "1.1.5",
     "publisher": "is06",
     "icon": "images/logo.png",
     "homepage": "https://github.com/is06/n64-assembly",
