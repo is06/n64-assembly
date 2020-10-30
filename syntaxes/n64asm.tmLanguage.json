@@ -32,7 +32,7 @@
         },
         {
             "name": "support.n64asm.instructions.rsp.vector.logical",
-            "match": "\\b(vlt|veq|vne|vge|vcl|vch|vcr|vmrg|vand|vnand|vor|vnor|vxor)\\b"
+            "match": "\\b(vlt|veq|vne|vge|vcl|vch|vcr|vmrg|vand|vnand|vor|vnor|vxor|vsar)\\b"
         },
         {
             "name": "support.n64asm.instructions.rsp.vector.operation.multiply",
@@ -45,6 +45,10 @@
         {
             "name": "support.n64asm.instructions.rsp.vector.operation.sub",
             "match": "\\b(vsub|vsut|vsubc|vsubb|vsucb|vsuc)\\b"
+        },
+        {
+            "name": "support.n64asm.instructions.rsp.cp",
+            "match": "\\b(cfc2|ctc2|mfc2|mtc2)\\b"
         },
         {
             "name": "support.n64asm.instructions.rsp.vector.load",

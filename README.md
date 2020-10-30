@@ -16,6 +16,10 @@ You can write specific N64 MIPS Assembly instructions and have great support in 
 
 ## Release Notes
 
+### 1.1.5
+
+- Added cfc2, ctc2, mfc2, mtc2, vsar missing instructions
+
 ### 1.1.4
 
 - Fixed tab colors in theme (thanks to [Hazematman](https://github.com/Hazematman))
